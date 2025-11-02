@@ -70,3 +70,5 @@ cargo run // for bin
 cargo test
 
 
+cargo package
+cargo publish
