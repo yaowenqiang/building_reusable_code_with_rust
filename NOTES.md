@@ -52,3 +52,9 @@ Conversion
   + FromStr/IntoStr
 
 
+Send:
+    Safe to send to another thread
+Sync:
+    Safe to share between threads
+Automatically derived by the compiler
+
