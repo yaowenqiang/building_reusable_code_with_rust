@@ -62,3 +62,11 @@ macros
 
 https://doc.rust-lang.org/book/ch20-05-macros.html
 https://danielkeep.github.io/tlborm/book/index.html
+
+cargo new example-binary --bin
+cargo new example-library --lib
+cargo build // for lib
+cargo run // for bin
+cargo test
+
+
