@@ -1,0 +1,16 @@
+# HelloMacro Trait 库配置文件
+# 这个库定义了 HelloMacro trait，作为过程宏的目标接口
+
+[package]
+name = "hello_macro"          # 库名称
+version = "0.1.0"             # 版本号
+edition = "2021"              # Rust edition
+description = "定义 HelloMacro trait 的 Rust 库"  # 库描述
+
+[lib]
+name = "hello_macro"          # 库文件名
+path = "src/lib.rs"           # 源文件路径
+
+# 依赖配置
+# HelloMacro trait 库本身不依赖外部库，保持最小化
+[dependencies]

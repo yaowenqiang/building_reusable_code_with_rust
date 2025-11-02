@@ -1,0 +1,29 @@
+# Rust 项目配置文件
+# 更多关于 Cargo.toml 的信息: https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "hello_world"          # 项目名称
+version = "0.1.0"             # 版本号，遵循语义化版本规范
+edition = "2021"              # Rust 版本，推荐使用 2021 edition
+authors = ["Your Name <your.email@example.com>"]  # 作者信息（可选）
+description = "Rust 过程宏学习项目：演示自定义派生宏的使用"  # 项目描述（可选）
+
+# 依赖配置
+# 更多关于依赖管理的文档: https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
+[dependencies]
+# 本地依赖：HelloMacro trait 定义库
+hello_macro = { path = "../hello_macro"  }
+
+# 本地依赖：HelloMacro 过程宏实现库
+# 注意：过程宏 crate 需要在编译时可用
+hello_macro_derive = { path = "../hello_macro/hello_macro_derive"  }
+
+# 开发依赖（可选）
+# 例如：用于测试的依赖
+# [dev-dependencies]
+# tokio-test = "0.4"
+
+# 特性标志（可选）
+# [features]
+# default = []
+# advanced = []

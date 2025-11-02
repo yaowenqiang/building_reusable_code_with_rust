@@ -1,0 +1,29 @@
+# HelloMacro 过程宏库配置文件
+# 这个库实现了 HelloMacro 的自定义派生宏
+
+[package]
+name = "hello_macro_derive"  # 过程宏库名称
+version = "0.1.0"             # 版本号
+edition = "2021"              # Rust edition
+description = "HelloMacro 自定义派生宏实现库"  # 库描述
+
+# 库配置
+[lib]
+name = "hello_macro_derive"  # 库文件名
+path = "src/lib.rs"           # 源文件路径
+proc-macro = true             # 指定这是一个过程宏库
+
+# 依赖配置
+# 过程宏开发的核心依赖
+[dependencies]
+# quote 库：用于代码生成，提供 quote! 宏
+# 文档：https://docs.rs/quote/latest/quote/
+quote = "1.0.41"
+
+# syn 库：用于解析 Rust 代码为抽象语法树
+# 文档：https://docs.rs/syn/latest/syn/
+syn = "2.0.108"
+
+# 可选：添加更多高级功能依赖
+# 例如：proc-macro2 = "1.0"  # 提供更好的过程宏 API
+# 例如：anyhow = "1.0"       # 错误处理库

@@ -58,3 +58,7 @@ Sync:
     Safe to share between threads
 Automatically derived by the compiler
 
+macros
+
+https://doc.rust-lang.org/book/ch20-05-macros.html
+https://danielkeep.github.io/tlborm/book/index.html
